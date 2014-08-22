@@ -25,3 +25,13 @@ docs/make.bat
 docs/doctrees
 docs/html
 /docs/html.zip
+/.ropeproject/config.py
+/.ropeproject/globalnames
+/.ropeproject/history
+/.ropeproject/objectdb
+/ID
+/TAGS
+/complete-dict
+/src/tags
+/tags
+/src/pysv/competencedir/pydoc

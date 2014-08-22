@@ -1,0 +1,37 @@
+<model xmlns:security="http://namespaces.plone.org/supermodel/security" xmlns:marshal="http://namespaces.plone.org/supermodel/marshal" xmlns:form="http://namespaces.plone.org/supermodel/form" xmlns="http://namespaces.plone.org/supermodel/schema">
+  <schema>
+    <field name="firstname" type="zope.schema.TextLine">
+      <description/>
+      <required>False</required>
+      <title>Firstname</title>
+    </field>
+    <field name="name" type="zope.schema.TextLine">
+      <description/>
+      <required>False</required>
+      <title>Name</title>
+    </field>
+    <field name="company" type="zope.schema.TextLine">
+      <description/>
+      <required>False</required>
+      <title>Company</title>
+    </field>
+    <field name="zipcode" type="zope.schema.TextLine">
+      <description/>
+      <required>False</required>
+      <title>Zipcode</title>
+    </field>
+    <field name="city" type="zope.schema.TextLine">
+      <description/>
+      <required>False</required>
+      <title>City</title>
+    </field>
+    <field name="country" type="zope.schema.Choice">
+      <description/>
+      <required>False</required>
+      <title>Country</title>
+      <values>
+        <element>Germany</element>
+      </values>
+    </field>
+  </schema>
+</model>
