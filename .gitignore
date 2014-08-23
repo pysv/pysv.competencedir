@@ -35,3 +35,7 @@ docs/html
 /src/tags
 /tags
 /src/pysv/competencedir/pydoc
+/src/pysv/competencedir/.ropeproject/config.py
+/src/pysv/competencedir/.ropeproject/globalnames
+/src/pysv/competencedir/.ropeproject/history
+/src/pysv/competencedir/.ropeproject/objectdb
