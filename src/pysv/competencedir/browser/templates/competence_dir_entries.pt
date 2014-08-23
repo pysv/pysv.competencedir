@@ -1,0 +1,35 @@
+<html xm lns="http://www.w3.org/1999/xhtml"
+      xml:lang="en-US" lang="en-US"
+      xmlns:tal="http://xml.zope.org/namespaces/tal"
+      xmlns:metal="http://xml.zope.org/namespaces/metal"
+      xmlns:i18n="http://xml.zope.org/namespaces/i18n"
+      metal:use-macro="context/main_template/macros/master"
+      i18n:domain="pysv.competencedir">
+<body>
+  <div metal:fill-slot="content-title">
+    <h1 class="documentFirstHeading" tal:content="context/title">
+      Title
+    </h1>
+  </div>
+
+  <div metal:fill-slot="content-description">
+    <p tal:content="context/description">
+      Description
+    </p>
+  </div>
+
+  <tal:content-core metal:fill-slot="content-core">
+
+  <div class="competenceEntries">
+    entries
+    <div class="competenceDirEntry"
+      tal:repeat="item view/get_entries">
+      <h2 tal:content="item/title" /> jo
+    </div>
+  </div>
+
+  </tal:content-core>
+</body>
+</html>
+
+

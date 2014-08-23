@@ -15,9 +15,10 @@
   <element value="pysv_competencedir_entry"/>
  </property>
  <property name="allow_discussion">False</property>
- <property name="default_view">view</property>
+ <property name="default_view">competence_entries_view</property>
  <property name="view_methods">
   <element value="view"/>
+  <element value="competence_entries_view"/>
  </property>
  <property name="default_view_fallback">False</property>
  <property name="add_permission">cmf.AddPortalContent</property>
@@ -26,7 +27,7 @@
   <element value="plone.app.dexterity.behaviors.metadata.IDublinCore"/>
   <element value="plone.app.content.interfaces.INameFromTitle"/>
  </property>
- <property name="schema"></property>
+ <property name="schema">pysv.competencedir.interfaces.ICompetenceDir</property>
  <property name="model_source">
   &lt;model xmlns="http://namespaces.plone.org/supermodel/schema"&gt;
       &lt;schema&gt;

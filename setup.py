@@ -8,18 +8,23 @@ import os
 
 version = '0.1'
 
+
 def read(*rnames):
     return open(os.path.join(os.path.dirname(__file__), *rnames)).read()
+
 
 long_description = \
     read('README.rst') + \
     read('docs', 'CHANGELOG.rst') + \
     read('docs', 'LICENSE.rst')
 
+
 setup(
     name='pysv.competencedir',
     version=version,
-    description="german Python Software Verband e.V. competence directoryfor pysv.org",
+    description=(
+        "german Python Software Verband e.V. "
+        "competence directoryfor pysv.org"),
     long_description=long_description,
     # Get more from http://pypi.python.org/pypi?%3Aaction=list_classifiers
     classifiers=[
@@ -37,11 +42,11 @@ setup(
     include_package_data=True,
     zip_safe=False,
     install_requires=[
-        'five.pt',
         'Plone',
         'plone.api',
         'setuptools',
         'z3c.jbot',
+        'plone.app.dexterity',
     ],
     extras_require={
         'test': [

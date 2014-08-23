@@ -14,4 +14,12 @@
       directory="static"
       />
 
+    <browser:page
+	name="competence_entries_view"
+	for="*"
+	class=".views.CompetenceDirEntries"
+	template="templates/competence_dir_entries.pt"
+	permission="zope2.View"
+	/>
+
 </configure>
